@@ -310,7 +310,7 @@ export default {
         						if (this.form.state !== '') {
         							if (this.form.time_needed !== '') {
         								if (this.form.lang !== '') {
-        									if (this.form.keywords.length > 0) {
+        									if (this.form.keywords.length == 0) {
         										if (this.form.company !== '') {
         											if (this.form.company !== '') {
 
