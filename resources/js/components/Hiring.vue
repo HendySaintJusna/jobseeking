@@ -310,7 +310,6 @@ export default {
         						if (this.form.state !== '') {
         							if (this.form.time_needed !== '') {
         								if (this.form.lang !== '') {
-        									if (this.form.keywords.length == 0) {
         										if (this.form.company !== '') {
         											if (this.form.company !== '') {
 
@@ -354,14 +353,7 @@ export default {
         										}
         										
 
-        									} else {
-        										swal({
-												  title: "Oops",
-												  text: "Give at least one keyword for the job",
-												  icon: "error",
-												  button: "ok",
-												});
-        									}
+        									
         									
         								} else {
         									swal({
