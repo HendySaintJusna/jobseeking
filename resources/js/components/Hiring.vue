@@ -311,7 +311,7 @@ export default {
         							if (this.form.time_needed !== '') {
         								if (this.form.lang !== '') {
         										if (this.form.company !== '') {
-        											if (this.form.company !== '') {
+        											
 
     												this.form.keywords.push(this.form.title)
 
@@ -330,17 +330,7 @@ export default {
 													  console.log(error);
 													});
 
-													}else{
-
-														swal({
-														  title: "Oops",
-														  text: "Choose a city!",
-														  icon: "error",
-														  button: "ok",
-														});
-	        										
-
-													}
+													
 
 
         										} else {
