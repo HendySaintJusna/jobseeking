@@ -2968,40 +2968,22 @@ var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
               if (this.form.state !== '') {
                 if (this.form.time_needed !== '') {
                   if (this.form.lang !== '') {
-                    if (this.form.keywords.length > 0) {
-                      if (this.form.company !== '') {
-                        if (this.form.company !== '') {
-                          this.form.keywords.push(this.form.title);
-                          this.form.post("/storeoffer/").then(function (response) {
-                            sweetalert__WEBPACK_IMPORTED_MODULE_2___default()({
-                              title: "Ad posted",
-                              icon: "success",
-                              button: "ok"
-                            });
-                            window.location = '/applications';
-                          }, function (error) {
-                            console.log(error);
-                          });
-                        } else {
-                          sweetalert__WEBPACK_IMPORTED_MODULE_2___default()({
-                            title: "Oops",
-                            text: "Choose a city!",
-                            icon: "error",
-                            button: "ok"
-                          });
-                        }
-                      } else {
+                    if (this.form.company !== '') {
+                      this.form.keywords.push(this.form.title);
+                      this.form.post("/storeoffer/").then(function (response) {
                         sweetalert__WEBPACK_IMPORTED_MODULE_2___default()({
-                          title: "Oops",
-                          text: "Give your company name!",
-                          icon: "error",
+                          title: "Ad posted",
+                          icon: "success",
                           button: "ok"
                         });
-                      }
+                        window.location = '/applications';
+                      }, function (error) {
+                        console.log(error);
+                      });
                     } else {
                       sweetalert__WEBPACK_IMPORTED_MODULE_2___default()({
                         title: "Oops",
-                        text: "Give at least one keyword for the job",
+                        text: "Give your company name!",
                         icon: "error",
                         button: "ok"
                       });

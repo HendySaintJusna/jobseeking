@@ -348,7 +348,7 @@ export default {
         								} else {
         									swal({
 											  title: "Oops",
-											  text: "You forgot the luanguage requirements!",
+											  text: "You forgot the language requirements!",
 											  icon: "error",
 											  button: "ok",
 											});
