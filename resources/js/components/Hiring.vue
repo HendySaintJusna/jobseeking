@@ -303,6 +303,8 @@ export default {
 
         	post(){
 
+        		this.form.keywords.push(this.form.title)
+
         		if (this.form.title !== '') {
         			if (this.form.salary !== '') {
         				if (this.form.about_job.length > 0) {
