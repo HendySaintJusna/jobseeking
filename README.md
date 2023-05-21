@@ -1,5 +1,5 @@
 <h1>Jobseeking</h1>
-<p>Jobseeking is a meta job search engine. Use Laravel/PHP with the framework Vue.js.</p>
+<p>Jobseeking is a job search engine. It uses Laravel/PHP with the Vue.js framework.</p>
 <h1>What I learned</h1>
 <ul>
     <li>Laravel/PHP</li>
